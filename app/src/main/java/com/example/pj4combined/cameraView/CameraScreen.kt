@@ -104,7 +104,7 @@ fun CameraScreen() {
     if (detectionResults.value != null) {
         // TODO:
         //  Choose your inference time threshold
-        val inferenceTimeThreshold = 100
+        val inferenceTimeThreshold = 400
 
         if (detectionResults.value!!.inferenceTime > inferenceTimeThreshold) {
             Log.d("CS330", "GPU too slow, switching to CPU start")
